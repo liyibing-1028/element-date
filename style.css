@@ -1,0 +1,38 @@
+.my-picker-container {
+  height: 40px;
+  position: relative;
+}
+.my-picker-container .select-date_input {
+  width: 100%;
+  padding-top: 20px;
+}
+.my-picker-container .select-date_input .input-group__input {
+  min-height: 20px;
+}
+.my-picker-container .select-date_input input {
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #223142;
+}
+.my-picker-container .timePick__div--cross {
+  position: absolute;
+  top: 18px;
+  color: #333;
+  cursor: pointer;
+}
+.my-picker-container .el-date-editor {
+  width: 1px !important;
+  height: 35px !important;
+  padding: 0 !important;
+  top: -40px !important;
+}
+.my-picker-container .el-input__prefix {
+  display: none;
+}
+.my-picker-container .el-input__inner {
+  padding: 0;
+}
+.el-visible-style {
+  visibility: visible !important;
+}

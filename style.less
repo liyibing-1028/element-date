@@ -1,0 +1,41 @@
+@import '../../commons/variables.less';
+
+.my-picker-container {
+  height: 40px;
+  position: relative;
+  .select-date_input {
+    width: 100%;
+    padding-top: 20px;
+    .input-group__input {
+      min-height: 20px;
+    }
+    input {
+      height: 20px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #223142;
+    }
+  }
+  .timePick__div--cross {
+    position: absolute;
+    top: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  .el-date-editor {
+    width: 1px !important;
+    height: 35px !important;
+    padding: 0 !important;
+    top: -40px !important;
+  }
+  .el-input__prefix {
+    display: none;
+  }
+  .el-input__inner {
+    padding: 0;
+  }
+}
+
+.el-visible-style {
+  visibility: visible !important;
+}

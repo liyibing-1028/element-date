@@ -1,0 +1,21 @@
+<div class="my-picker-container" :style="{width: isPickerwidth + 'px'}">
+    <v-text-field
+        :label="isLabel"
+        v-model="selectDate"
+        class="select-date_input my-time-input"
+        :placeholder="isPlaceholder"
+        hide-details
+        @click.native="dateChange($event)"
+      ></v-text-field>
+      <div class="timePick__div--cross" @click="clearTime">×</div>
+      <el-date-picker
+        v-model="dateVal"
+        :type="isType"
+        ref="refTime"
+        @focus="dateFocus"
+        @change="dateBlur"
+        :picker-options="pickerOptions"
+        placeholder='请选择日期'
+        :default-time="defaultTime">
+      </el-date-picker>
+</div>
